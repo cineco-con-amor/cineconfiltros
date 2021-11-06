@@ -2,6 +2,12 @@
   "manifest_version": 2,
   "version": "0.1.0",
   "name": "cineconfiltros",
+  "description": "Adds a button to the address bar when visiting https://www.cinecolombia.com. Click on this button to display a set of options to filter the list of movies showed in the page. Movies can be filtered by date, time, language, format and venue.",
+  "homepage_url": "https://github.com/cineco-con-amor/cineconfiltros",
+  "icons": {
+    "48": "icons/main.svg",
+    "96": "icons/main.svg"
+  },
   "background": {
     "page": "background/state.html"
   },
