@@ -1,0 +1,57 @@
+{
+  "manifest_version": 2,
+  "version": "0.1.0",
+  "name": "cineconfiltros",
+  "background": {
+    "page": "background/state.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.cinecolombia.com/bogota",
+        "*://www.cinecolombia.com/barranquilla",
+        "*://www.cinecolombia.com/armenia",
+        "*://www.cinecolombia.com/bucaramanga",
+        "*://www.cinecolombia.com/cartagena",
+        "*://www.cinecolombia.com/ibague",
+        "*://www.cinecolombia.com/manizales",
+        "*://www.cinecolombia.com/medellin",
+        "*://www.cinecolombia.com/monteria",
+        "*://www.cinecolombia.com/cali",
+        "*://www.cinecolombia.com/pereira",
+        "*://www.cinecolombia.com/popayan",
+        "*://www.cinecolombia.com/villavicencio",
+        "*://www.cinecolombia.com/*/cartelera",
+        "*://www.cinecolombia.com/*/pronto"
+      ],
+      "js": [
+        "util/globals.js",
+        "content/actuator.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "page_action": {
+    "browser_style": true,
+    "default_icon": "icons/main.svg",
+    "default_title": "...con amor",
+    "default_popup": "popup/popup.html",
+    "show_matches": [
+      "*://www.cinecolombia.com/bogota",
+      "*://www.cinecolombia.com/barranquilla",
+      "*://www.cinecolombia.com/armenia",
+      "*://www.cinecolombia.com/bucaramanga",
+      "*://www.cinecolombia.com/cartagena",
+      "*://www.cinecolombia.com/ibague",
+      "*://www.cinecolombia.com/manizales",
+      "*://www.cinecolombia.com/medellin",
+      "*://www.cinecolombia.com/monteria",
+      "*://www.cinecolombia.com/cali",
+      "*://www.cinecolombia.com/pereira",
+      "*://www.cinecolombia.com/popayan",
+      "*://www.cinecolombia.com/villavicencio",
+      "*://www.cinecolombia.com/*/cartelera",
+      "*://www.cinecolombia.com/*/pronto"
+    ]
+  }
+}
