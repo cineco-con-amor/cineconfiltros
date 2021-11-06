@@ -3,3 +3,6 @@ node_modules/
 
 # VS Code
 .vscode/
+
+# web-ext
+web-ext-artifacts/
